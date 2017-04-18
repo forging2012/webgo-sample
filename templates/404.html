@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Sample error page">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sample - Error</title>
+	<style>
+			* {
+				transition: background-color 0.3s ease, 
+							color 0.3s ease, 
+							border-color 0.5s ease, 
+							box-shadow 0.5s ease, 
+							text-shadow 0.3s ease;
+				box-sizing: border-box;
+			}
+
+			html, body {	
+				width: 100%;
+				height: 100%;
+				box-sizing: content-box;
+				position: relative;
+				padding: 0;
+				margin: 0;
+			}
+
+			body {
+				font-family: Lato,"Open sans",sans-serif;
+				background: #efefef;
+				font-size: 16px;
+				line-height: 1.5em;
+				color: #444;
+
+			}
+
+			h1 {
+				font-size: 3em;
+				line-height: 1.167em;
+				margin: 0 0 0.5em;
+			}
+			p {
+				margin: 0 0 1em 0;
+			}
+			.error {
+				font-weight: 300;
+				text-align: center; 
+				color: #e74c3c;
+			}
+			
+			#wrap {min-width: 480px;}
+
+			#footer {
+				background: #eee;
+				font-size: 0.75em;
+				color: #999;
+				text-align: center;
+
+				border-top: 1px solid #ddd;
+				padding-top: 0.25em;
+
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 5;
+			}
+
+			#main {
+				width: 90%;
+				max-width: 38em;
+				height: 10em;
+				margin: auto;
+				text-align: center;
+
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+
+			}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<section id="main">
+		<h1 class="error">Error 404</h1>
+		<p>Sorry, the requested URL was not found on this server</p>
+	</section>
+	<footer id="footer">&copy;2017</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/bnkamalesh/webgo",
+			"repository": "https://github.com/bnkamalesh/webgo",
+			"revision": "166b61207a14c4c761c0e3243d7168f88727c984",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/codegangsta/negroni",
+			"repository": "https://github.com/codegangsta/negroni",
+			"revision": "c7477ad8e330bef55bf1ebe300cf8aa67c492d1b",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/go-sql-driver/mysql",
+			"repository": "https://github.com/go-sql-driver/mysql",
+			"revision": "66312f7fe2678aa0f5ec770f96702f4c4ec5aa8e",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/julienschmidt/httprouter",
+			"repository": "https://github.com/julienschmidt/httprouter",
+			"revision": "77366a47451a56bb3ba682481eed85b64fea14e8",
+			"branch": "master"
+		},
+		{
+			"importpath": "gopkg.in/mgo.v2",
+			"repository": "https://gopkg.in/mgo.v2",
+			"revision": "b6e2fa371e64216a45e61072a96d4e3859f169da",
+			"branch": "v2"
+		}
+	]
+}

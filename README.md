@@ -6,8 +6,29 @@ Both MySQL and MongoDB handlers are being used, which would help in understandin
 
 ## How to run?
 
-`go run *.go`
+1. Start a MySQL & MongoDB server
 
+2. MySQL - create a table `users`, with the following columns `_id,name,age,company` (as shown in the sample data below).
+
+3. Setup a MongoDB server, create a collection `users` and insert a sample document (as shown in the sample data below)
+
+4. Update the configurations accordingly in `main.go`.
+
+5. Start the server by running this command `$ go run *.go` in the terminal.
+
+If all good, you'll see the following message on the terminal.
+
+`Starting HTTP server, listening on ':8000'`
+
+You can try the following links to test
+
+1. `http://localhost:8000` - Hello world response
+
+2. `http://localhost:8000/auth` - Sample authentication middleware
+
+3. `http://localhost:8000/mgodb/John` - Result fetched from MongoDB
+
+4. `http://localhost:8000/mysql/John` - Result fetched from MySQL
 
 ## Contents of MySQL table `users`
 

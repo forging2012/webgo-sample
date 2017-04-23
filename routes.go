@@ -17,11 +17,12 @@ func getRoutes(g *webgo.Globals) []*webgo.Route {
 			G:       g,
 		},
 		&webgo.Route{
-			Name:    "root",                              // A label for the API/URI, this is not used anywhere.
-			Method:  "GET",                               // request type
-			Pattern: "/",                                 // Pattern for the route
-			Handler: []http.HandlerFunc{mws.Cors, dummy}, // route handler
+			Name:    "root",                                             // A label for the API/URI, this is not used anywhere.
+			Method:  "GET",                                              // request type
+			Pattern: "/",                                                // Pattern for the route
+			Handler: []http.HandlerFunc{mws.Cors, dummy, afterResponse}, // route handler
 			G:       g,
+			FallThroughPostResponse: true,
 		},
 		&webgo.Route{
 			Name:    "auth",                                         // A label for the API/URI, this is not used anywhere.

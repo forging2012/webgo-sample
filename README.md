@@ -4,7 +4,7 @@ A simple and bare minimum web app built using webgo framework which showcases mo
 
 Both MySQL and MongoDB handlers are being used, which would help in understanding how to add DB handlers and similarly anything required for the to the app context.
 
-## How to run?
+### How to run?
 
 1. Start a MySQL & MongoDB server
 
@@ -22,7 +22,7 @@ If all good, you'll see the following message on the terminal.
 
 You can try the following links to test
 
-1. `http://localhost:8000` - Hello world response
+1. `http://localhost:8000` - Hello world response with a CORS middleware, and a post response middleware.
 
 2. `http://localhost:8000/auth` - Sample authentication middleware
 

@@ -24,7 +24,7 @@ func NotFound(g webgo.Globals) http.HandlerFunc {
 //MongoDB is the handler which fetches data from MOngoDB
 func MongoDB(w http.ResponseWriter, r *http.Request) {
 	// Access the Globals from context
-	wctx := r.Context().Value("webgocontext").(*webgo.WC)
+	wctx := webgo.GetContext(r)
 	dbs := wctx.Route.G.App["dbstore"].(*DBStore)
 
 	// Query string and request body can be accessed directly from `r *http.Request`
@@ -41,7 +41,7 @@ func MongoDB(w http.ResponseWriter, r *http.Request) {
 
 //MySQL is the handler which uses the MySQL DB handler
 func MySQL(w http.ResponseWriter, r *http.Request) {
-	wctx := r.Context().Value("webgocontext").(*webgo.WC)
+	wctx := webgo.GetContext(r)
 	dbs := wctx.Route.G.App["dbstore"].(*DBStore)
 
 	// Query string and request body can be accessed directly from `r *http.Request`

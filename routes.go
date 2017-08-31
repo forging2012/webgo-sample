@@ -12,7 +12,7 @@ func getRoutes(g *webgo.Globals) []*webgo.Route {
 		&webgo.Route{
 			Name:    "all_options",                       // A label for the API/URI, this is not used anywhere.
 			Method:  "OPTIONS",                           // request type
-			Pattern: "/*wildcard",                        // Pattern for the route
+			Pattern: "/:wildcard*",                       // Pattern for the route
 			Handler: []http.HandlerFunc{mws.CorsOptions}, // route handler
 			G:       g,
 		},
